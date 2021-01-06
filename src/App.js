@@ -24,7 +24,7 @@ function App() {
   const [home, setHome] = useState({
     title:'Projekt jag gjort',
     subTitle:'Med fokus på Front end, men gärna lite Back end.',
-    tagLine: 'Scrolla runt här under, för att se vad jag gjort.'
+    tagLine: '<- Scrolla runt -> här under, för att se vad jag gjort.'
   });
 
   const [about, setAbout] = useState('Om mig');
