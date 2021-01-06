@@ -1,0 +1,46 @@
+
+
+
+.show-reel{
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  height: 600px;
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.j-card {
+  margin-right: 100px;
+}
+.j-card img {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 3px 2px #ccc;
+}
+
+.j-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 0 0 920px;
+}
+
+.j-card-container{
+  max-width: 280px;
+  margin: 0 10px 5px 10px;
+}
+
+.j-card-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.j-card-description {
+  font-size: 14px;
+}
+
+.j-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
