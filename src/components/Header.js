@@ -8,7 +8,7 @@ function Header(props) {
   
   return (
     <Navbar className="border-bottom" expand="lg" bg="transparent" >
-    <Navbar.Brand>{props.title}</Navbar.Brand>
+    <Navbar.Brand><Link to="/" style={{color:'#00000080', textDecoration:"none"}}>{props.title}</Link></Navbar.Brand>
     <Navbar.Toggle className="border-0" aria-controls="Navbar toggle" />
     <Navbar.Collapse id="Navbar-toggle">
       <Nav className="ml-auto">
