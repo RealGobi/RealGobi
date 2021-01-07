@@ -27,20 +27,6 @@ function Showreel() {
     link:'',
     selected: false
   },{
-    id: 91,
-    title: 'E-Wallet',
-    description: 'Slutprojekt i Morderna Ramverk, React Campus Varberg. Gjord med React, React Router, Context mm',
-    img:eWallet,
-    link:'',
-    selected: false
-  },{
-    id: 81,
-    title: 'E-Wallet',
-    description: 'Slutprojekt i Morderna Ramverk, React Campus Varberg. Gjord med React, React Router, Context mm',
-    img:eWallet,
-    link:'',
-    selected: false
-  },{
     id: 2,
     title: 'Ski',
     description: 'Projekt med både frontend och backend. Vi var 3 personer som på kort tid skulle lösa en boknings app. Gjord med Vue och dess ekosystem och Node.js',
