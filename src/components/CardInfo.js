@@ -10,7 +10,7 @@ function CardInfo(props) {
     <animated.div className="j-card-container" style={style} >
       <p className="j-card-title">{props.title}</p>
       <p  className="j-card-description">{props.description}</p>
-      <a href={props.link} target="_blank" rel="noreferrer">Click me!</a>
+      <a href={props.link} target="_blank" rel="noreferrer">Klicka här för att se</a>
     </animated.div>
   )
 }
