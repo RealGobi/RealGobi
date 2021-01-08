@@ -8,7 +8,6 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Switch from 'react-bootstrap/esm/Switch';
 
 function App() {
 
@@ -24,17 +23,18 @@ function App() {
   const [home, setHome] = useState({
     title:'Projekt jag gjort',
     subTitle:'Med fokus på Front end, men gärna lite Back end.',
-    tagLine: '<- Scrolla runt -> här under, för att se vad jag gjort.'
+    tagLine: '<- Scrolla runt -> här under, för att se vad jag gjort.',
+    tagLineRes: 'Scrolla ner här under, för att se vad jag gjort.'
   });
 
   const [about, setAbout] = useState('Om mig');
-  const [contact, setContact] = useState('Let\'s talk.');
+  const [contact, setContact] = useState('Låt oss ta det över en kaffe.');
   
   return (
     <Router className="App">
       <Container className="p-0" fluid={true}>
         <Header title={siteTitle} />
-            <Route path="/" exact render={()=> <Home title={home.title} subTitle={home.subTitle} tagLine={home.tagLine} /> } />
+            <Route path="/" exact render={()=> <Home title={home.title} subTitle={home.subTitle} tagLine={home.tagLine} tagLineRes={home.tagLineRes} /> } />
             <Route path="/about" render={()=> <About about={about} /> } />
             <Route path="/contact" render={()=> <Contact contact={contact} /> } />
             <Redirect to="/" />

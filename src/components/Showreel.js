@@ -28,7 +28,7 @@ function Showreel() {
     selected: false
   },{
     id: 2,
-    title: 'Ski',
+    title: 'Fjällgården',
     description: 'Projekt med både frontend och backend. Vi var 3 personer som på kort tid skulle lösa en boknings app. Gjord med Vue och dess ekosystem och Node.js',
     img:ski,
     link:'www.realgobi.se/ski/index.html#/home',
