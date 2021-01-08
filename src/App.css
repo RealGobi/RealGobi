@@ -3,7 +3,8 @@
 
 .show-reel{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   overflow-x: scroll;
   height: 600px;
   max-width: 1130px;
@@ -11,7 +12,7 @@
 }
 
 .j-card {
-  margin-right: 100px;
+  margin:0 100px 0 0;
 }
 .j-card img {
   border-radius: 10px;
@@ -23,6 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  flex-direction: row;
   margin: 0 0 0 110px;
   /*
   if more then 3 obj use:
@@ -47,4 +49,23 @@
 .j-content {
   max-width: 800px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  .show-reel{
+    justify-content: center;
+    height: auto;
+  }
+
+  .j-row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 0 0 0px;
+  }
+
+  .j-card {
+    margin:0 0 50px  0;
+  }
 }
