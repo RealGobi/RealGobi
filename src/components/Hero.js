@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import useWindowDimensions from '../Hooks/useWindowDimensions';
 
 import { Container, Row, Col } from 'react-bootstrap';
@@ -7,7 +7,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 function Hero(props) {
 
   const { width } = useWindowDimensions();
-console.log(width > 767, props);
+
   return (
     <Jumbotron className="bg-transparent jumbotron-fluid p-0">
       <Container fluid={true}>
