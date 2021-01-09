@@ -24,7 +24,7 @@ function JForm() {
     }
 
 
-    Axios.post(`http://localhost:${port}/api/email`, emailToSend)
+    Axios.post(`https://js-api-portfolio.herokuapp.com/api/email`, emailToSend)
     .then(res=> {
       if(res.data.success){
         // reset

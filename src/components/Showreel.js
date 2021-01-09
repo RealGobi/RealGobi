@@ -6,6 +6,7 @@ import ski from '../assets/ski.png';
 import eWallet from '../assets/e-wallet.png';
 import memory from '../assets/memory.png';
 import starWars from '../assets/star.png';
+import dinner from '../assets/dinner.png';
 
 
 function Showreel() {
@@ -16,7 +17,7 @@ function Showreel() {
     title: 'Star Wars',
     description: 'Jag gjorde ett arbetsprov där jag lekte runt i ett star wars API. Gjort i React',
     img:starWars,
-    link:'www.realgobi.se/star/index.html',
+    link:'star/index.html',
     selected: false
   },
     {
@@ -24,14 +25,30 @@ function Showreel() {
     title: 'E-Wallet',
     description: 'Slutprojekt i Morderna Ramverk, React Campus Varberg. Gjord med React, React Router, Context mm',
     img:eWallet,
-    link:'www.realgobi.se/cards/build/index.html',
+    link:'cards/build/index.html',
+    selected: false
+  },
+    {
+    id: 9,
+    title: 'Memory',
+    description: 'Memory i vanilla JavaScript.',
+    img:memory,
+    link:'Memory/index.html',
+    selected: false
+  },
+  {
+    id: 10,
+    title: 'Let\'s do Dinner',
+    description: 'Examensarbete, ligger ej online än, kommer inom kort.',
+    img:dinner,
+    link:'',
     selected: false
   },{
     id: 2,
     title: 'Fjällgården',
     description: 'Projekt med både frontend och backend. Vi var 3 personer som på kort tid skulle lösa en boknings app. Gjord med Vue och dess ekosystem och Node.js',
     img:ski,
-    link:'www.realgobi.se/ski/index.html#/home',
+    link:'ski/index.html#/home',
     selected: false
   }]
   );

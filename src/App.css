@@ -6,15 +6,18 @@
   flex-direction: column;
   justify-content: flex-start;
   overflow-x: scroll;
-  height: 600px;
+  height: 500px;
   max-width: 1130px;
   margin: 0 auto;
 }
 
 .j-card {
   margin:0 100px 0 0;
+  cursor: pointer;
 }
 .j-card img {
+  width:250px;
+  height: 300px;
   border-radius: 10px;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 3px 2px #ccc;
@@ -25,7 +28,7 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: row;
-  margin: 0 0 0 110px;
+  margin: 0 0 0 900px;
   /*
   if more then 3 obj use:
   margin: 0 0 0 500px;
@@ -33,7 +36,7 @@
 }
 
 .j-card-container{
-  max-width: 280px;
+  max-width: 250px;
   margin: 0 10px 5px 10px;
 }
 
@@ -68,4 +71,10 @@
   .j-card {
     margin:0 0 50px  0;
   }
+
+  .j-card-container{
+    max-width: 250px;
+    margin: 0px 0px 0px 0px;
+  }
+
 }
