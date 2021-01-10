@@ -39,9 +39,9 @@ function Showreel() {
   {
     id: 10,
     title: 'Let\'s do Dinner',
-    description: 'Examensarbete, ligger ej online än, kommer inom kort.',
+    description: 'Examensarbete på Medieinstitutet. Gjort av mig och Åsa. Gjort i React med Redux, Scss på frontend och med Node.js, Express, MongoDB mm på backend. (OBS, gjord för Ipad och mobil)',
     img:dinner,
-    link:'',
+    link:'/dinner',
     selected: false
   },{
     id: 2,
