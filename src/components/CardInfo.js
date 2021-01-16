@@ -1,17 +1,21 @@
 import React from 'react';
-import {useSpring, animated} from 'react-spring';
 
 
 function CardInfo(props) {
 
-  const style = useSpring({opacity:1, from: {opacity: 0} });
 
   return (
-    <animated.div className="j-card-container" style={style} >
-      <p className="j-card-title">{props.title}</p>
+    <div className="j-card-container">
+      <p className="j-card-title ">{props.title}</p>
       <p  className="j-card-description">{props.description}</p>
       <a href={props.link} target="_blank" rel="noreferrer">Klicka här för att se</a>
-    </animated.div>
+      <div>
+        <hr />
+      {props.githubFront && <a className="github-link" style={{float:'left'}} href={props.githubFront} target="_blank" rel="noreferrer">Github Front End</a> }
+      {props.githubBack && <a className="github-link" style={{float:'right'}}  href={props.githubBack} target="_blank" rel="noreferrer">Github Back End</a>}
+      </div>
+
+    </div>
   )
 }
 
