@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: flex-start;
   overflow-x: scroll;
-  height: 530px;
+  height: auto;
   max-width: 1130px;
   margin: 0 auto;
 }
@@ -26,9 +26,10 @@
 .j-row {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
-  margin: 0 0 0 900px;
+  margin-bottom: 25px;
+
   /*
   if more then 3 obj use:
   margin: 0 0 0 500px;
@@ -54,6 +55,53 @@
   margin: 0 auto;
 }
 
+.modal-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5% 95%;
+  grid-template-areas: 
+  ". close-modal"
+  "card-j info ";
+}
+
+.close-modal{
+  margin-top: 0px;
+  grid-area: close-modal;
+  text-align: right;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.close-model-responsive{
+  padding: 8px;
+  box-shadow: 0 0 0 1px rgba(160, 160, 160, 0.425);
+  border-radius: 10px;
+}
+
+.card-j{
+  grid-area: card-j;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0;
+}
+
+.card-j img {
+  border-radius: 10px;
+}
+
+.info{
+  grid-area: info;
+}
+
+.github-link {
+  color:#ccc !important;
+  font-size: .85rem;
+}
+.github-link:hover {
+  text-decoration: none !important;
+}
+
 @media screen and (max-width: 768px) {
 
   .show-reel{
@@ -75,6 +123,22 @@
   .j-card-container{
     max-width: 250px;
     margin: 0px 0px 0px 0px;
+  }
+
+  .modal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+  .card-j {
+    margin: 20px 0;
+  }
+
+  .close-modal{
+    margin-top: 50px;
   }
 
 }
